@@ -3,7 +3,7 @@
 //Elements
 const indexPageTitle='Acme Web Design | Welcome' 
 //const about =' href="about.html'
-const navAboutLink = '[test-id="nav-about"]'
+const navAboutLink = '[test-id=nav-about]'
 
 
 //Actions /functions
@@ -13,7 +13,7 @@ function checkTitleOfIndexPage(cy){
 
 function navigateToAboutPage(cy,contentToConfirm){
     cy.get(navAboutLink).click()
-    cy,contains(contentToConfirm)
+    cy.contains(contentToConfirm)
 }
 
 
